@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+      color-scheme: light !important;
+    }
+  }
+
+
+  /* styles.css */
+
+.divA {
+    width: 80vw; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    background-color: white; 
+
+  
+
+  }
+  
+  .divB {
+    width: 200%; /* Ensure this is wider than .divA to facilitate scrolling */
+    display: flex;
+    align-items: center;
+
+    animation: scroll-horizontal 13s linear infinite;
+    /* Optional background color */
+
+  }
+  
+  
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+   
+  }
+  
+
+  .about{
+    /* background-image: ; */
+  }
