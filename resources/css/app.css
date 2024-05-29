@@ -47,6 +47,22 @@
   }
   
 
-  .about{
-    /* background-image: ; */
-  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+.border-bottom-customize{
+  
+  border-bottom: 2px solid #072675 !important;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  right: 0px;
+  top: 65px;
+}

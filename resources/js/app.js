@@ -8,3 +8,6 @@ const divB = document.getElementsByClassName('divB')[0];
 //   divB.appendChild(divB.children[0]);
 
 // },1000);
+
+import { Input, initTWE } from "tw-elements";
+initTWE({ Input }, { allowReinits: true });

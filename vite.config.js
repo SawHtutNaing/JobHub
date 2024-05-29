@@ -14,5 +14,11 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss],
     },
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "resources/sass/app.scss";`,
+
+      },
+    },
   },
 });

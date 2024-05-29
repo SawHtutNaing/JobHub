@@ -11,4 +11,15 @@ class HomeController extends Controller
     {
         return view('Home/index', ['jobs' => Job::JobList()]);
     }
+
+    public function login()
+    {
+        return view('Home/index', ['jobs' => Job::JobList()]);
+    }
+
+
+    public function jobs()
+    {
+        return view('Jobs', ['jobs' => Job::JobList()]);
+    }
 }
