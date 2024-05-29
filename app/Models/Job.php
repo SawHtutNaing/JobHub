@@ -19,8 +19,9 @@ class Job extends Model
                 "subCategories": ["HTML", "CSS"],
                 "companyName": "Tech Innovators",
                 "jobType": "Remote",
-                "salary": "$70K-$90K",
-                "date": "2024-05-15"
+                "salary": "$60K-$80K",
+                "date": "2024-06-10",
+                "image": "one.jpg"
             },
             {
                 "name": "Backend Developer",
@@ -28,8 +29,9 @@ class Job extends Model
                 "subCategories": ["Node.js", "Express"],
                 "companyName": "NextGen Solutions",
                 "jobType": "Hybrid",
-                "salary": "$80K-$100K",
-                "date": "2024-05-14"
+                "salary": "$70K-$90K",
+                "date": "2024-06-05",
+                "image": "one.jpg"
             },
             {
                 "name": "Project Manager",
@@ -37,8 +39,9 @@ class Job extends Model
                 "subCategories": ["Site Mgmt", "Safety"],
                 "companyName": "BuildRight Inc.",
                 "jobType": "Onsite",
-                "salary": "$90K-$110K",
-                "date": "2024-05-13"
+                "salary": "$80K-$100K",
+                "date": "2024-06-03",
+                "image": "two.jpg"
             },
             {
                 "name": "Data Scientist",
@@ -46,8 +49,9 @@ class Job extends Model
                 "subCategories": ["Python", "ML"],
                 "companyName": "Data Insights",
                 "jobType": "Remote",
-                "salary": "$100K-$130K",
-                "date": "2024-05-12"
+                "salary": "$90K-$120K",
+                "date": "2024-06-08",
+                "image": "one.jpg"
             },
             {
                 "name": "Civil Engineer",
@@ -56,7 +60,8 @@ class Job extends Model
                 "companyName": "Urban Build Co.",
                 "jobType": "Onsite",
                 "salary": "$70K-$90K",
-                "date": "2024-05-11"
+                "date": "2024-06-02",
+                "image": "two.jpg"
             },
             {
                 "name": "UI/UX Designer",
@@ -65,7 +70,8 @@ class Job extends Model
                 "companyName": "Creative Minds",
                 "jobType": "Hybrid",
                 "salary": "$60K-$80K",
-                "date": "2024-05-10"
+                "date": "2024-06-11",
+                "image": "one.jpg"
             },
             {
                 "name": "DevOps Engineer",
@@ -73,8 +79,9 @@ class Job extends Model
                 "subCategories": ["AWS", "Docker"],
                 "companyName": "Cloud Solutions",
                 "jobType": "Remote",
-                "salary": "$90K-$120K",
-                "date": "2024-05-09"
+                "salary": "$80K-$110K",
+                "date": "2024-06-07",
+                "image": "one.jpg"
             },
             {
                 "name": "Electrician",
@@ -83,7 +90,8 @@ class Job extends Model
                 "companyName": "ElectroFix",
                 "jobType": "Onsite",
                 "salary": "$50K-$70K",
-                "date": "2024-05-08"
+                "date": "2024-06-01",
+                "image": "two.jpg"
             },
             {
                 "name": "Full Stack Dev",
@@ -91,8 +99,9 @@ class Job extends Model
                 "subCategories": ["React", "Node.js"],
                 "companyName": "Innovative Web",
                 "jobType": "Hybrid",
-                "salary": "$80K-$110K",
-                "date": "2024-05-07"
+                "salary": "$80K-$100K",
+                "date": "2024-06-09",
+                "image": "one.jpg"
             },
             {
                 "name": "Site Supervisor",
@@ -101,7 +110,8 @@ class Job extends Model
                 "companyName": "BuildTech",
                 "jobType": "Onsite",
                 "salary": "$60K-$80K",
-                "date": "2024-05-06"
+                "date": "2024-06-04",
+                "image": "two.jpg"
             },
             {
                 "name": "QA Engineer",
@@ -110,7 +120,8 @@ class Job extends Model
                 "companyName": "Quality Matters",
                 "jobType": "Remote",
                 "salary": "$70K-$90K",
-                "date": "2024-05-05"
+                "date": "2024-06-06",
+                "image": "one.jpg"
             },
             {
                 "name": "Marketing Spec",
@@ -118,8 +129,9 @@ class Job extends Model
                 "subCategories": ["SEO", "Content"],
                 "companyName": "Market Leaders",
                 "jobType": "Hybrid",
-                "salary": "$50K-$70K",
-                "date": "2024-05-04"
+                "salary": "$60K-$80K",
+                "date": "2024-06-03",
+                "image": "three.png"
             },
             {
                 "name": "Network Engineer",
@@ -128,7 +140,8 @@ class Job extends Model
                 "companyName": "NetSecure",
                 "jobType": "Onsite",
                 "salary": "$80K-$100K",
-                "date": "2024-05-03"
+                "date": "2024-06-02",
+                "image": "one.jpg"
             },
             {
                 "name": "Product Manager",
@@ -137,7 +150,8 @@ class Job extends Model
                 "companyName": "Tech Innovators",
                 "jobType": "Remote",
                 "salary": "$100K-$130K",
-                "date": "2024-05-02"
+                "date": "2024-06-01",
+                "image": "one.jpg"
             },
             {
                 "name": "Architect",
@@ -146,7 +160,8 @@ class Job extends Model
                 "companyName": "DesignPro",
                 "jobType": "Onsite",
                 "salary": "$90K-$120K",
-                "date": "2024-05-01"
+                "date": "2024-05-31",
+                "image": "two.jpg"
             },
             {
                 "name": "SysAdmin",
@@ -155,7 +170,8 @@ class Job extends Model
                 "companyName": "SysAdmin Pros",
                 "jobType": "Remote",
                 "salary": "$70K-$90K",
-                "date": "2024-04-30"
+                "date": "2024-05-30",
+                "image": "one.jpg"
             },
             {
                 "name": "HR Specialist",
@@ -164,7 +180,8 @@ class Job extends Model
                 "companyName": "People First",
                 "jobType": "Hybrid",
                 "salary": "$60K-$80K",
-                "date": "2024-04-29"
+                "date": "2024-05-29",
+                "image": "four.png"
             },
             {
                 "name": "Graphic Designer",
@@ -173,7 +190,8 @@ class Job extends Model
                 "companyName": "Creative Arts",
                 "jobType": "Remote",
                 "salary": "$50K-$70K",
-                "date": "2024-04-28"
+                "date": "2024-05-28",
+                "image": "five.jpg"
             },
             {
                 "name": "Construction Worker",
@@ -182,7 +200,8 @@ class Job extends Model
                 "companyName": "BuildStrong",
                 "jobType": "Onsite",
                 "salary": "$40K-$60K",
-                "date": "2024-04-27"
+                "date": "2024-05-27",
+                "image": "two.jpg"
             },
             {
                 "name": "DB Admin",
@@ -191,9 +210,9 @@ class Job extends Model
                 "companyName": "DataCare",
                 "jobType": "Remote",
                 "salary": "$80K-$100K",
-                "date": "2024-04-26"
+                "date": "2024-05-26",
+                "image": "one.jpg"
             }
-        ]
-        ');
+        ]');
     }
 }

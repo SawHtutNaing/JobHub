@@ -78,7 +78,7 @@ class= " grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 "
 <section>
 
     <div 
-        class="  bg-slate-300"
+        class=" mt-28 text-center text-3xl"
     >
 
     <h1>
@@ -94,9 +94,119 @@ class= " grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 "
    
     <div class="mt-10 mx-auto w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4">
         
-        @for ($i = 0; $i < 5; $i++) 
-            @include('components.Companies_card')
-            @endfor
+        <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/one.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/three.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/five.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/six.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/seven.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/eight.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="flip-card  w-64  h-64">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="{{asset('storage/images/companies_card/nine.jpg')}}"  class="h-full w-full " alt="">
+                </div>
+                <div class="flip-card-back">
+                   <h1>
+                    Suntory Global Spirits
+                   </h1>
+                   <p>
+                    Consumer Goods & Services , Food & Beverage
+                   </p>
+                </div>
+            </div>
+          </div>
+
+          
     
 
   </div>

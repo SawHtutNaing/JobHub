@@ -2,9 +2,12 @@
 @vite('resources/css/app.css')
 
 
+
+
+
     <div class="max-w-sm  bg-white border   border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-            <img class="rounded-t-lg" src="{{ asset('storage/images/jobone.png') }}" alt="" />
+            <img class="rounded-t-lg h-52" src="{{ asset('storage/images/job'.$job->image) }}" alt="" />
         </a>
 
      
@@ -23,7 +26,7 @@
             </div> 
              <div class=" mt-4">
                 
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> 1000$\month</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> {{$job->salary}}\month</span>
     
             </div>
             <div class=" my-5 flex justify-start  gap-y-3 flex-wrap">

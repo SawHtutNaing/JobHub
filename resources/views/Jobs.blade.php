@@ -14,116 +14,79 @@
                
             <div class="z-10 mt-5 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
                
-                <h1  class='lg:text-xl xl:text-3xl'>
+                <h1  class='lg:text-xl xl:text-2xl'>
                     Work Setting
                 </h1>
                 <ul class=" px-3 pb-3 overflow-y-auto  text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-11" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Bonnie Green</label>
+                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300"> On Site (5000)</label>
                     </div>
                   </li>
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                         <input checked id="checkbox-item-12" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-12" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Jese Leos</label>
+                        <label for="checkbox-item-12" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Remote (400)</label>
                       </div>
                   </li>
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-13" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-13" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Michael Gough</label>
+                      <label for="checkbox-item-13" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Hydrid (400)</label>
                     </div>
                   </li>
-                  <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-14" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-14" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Robert Wall</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-15" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-15" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Joseph Mcfall</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-16" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-16" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Leslie Livingston</label>
-                    </div>
-                  </li>
-                        <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-17" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-17" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Roberta Casas</label>
-                    </div>
-                  </li>
+
+                        
                 </ul>
             
             </div>
             <div class="z-10 mt-5 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
                
-                <h1  class='lg:text-xl xl:text-3xl'>
+                <h1  class='lg:text-xl xl:text-2xl'>
                    Posted Date
                 </h1>
                 <ul class=" px-3 pb-3 overflow-y-auto  text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-11" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Bonnie Green</label>
+                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Any Date</label>
                     </div>
                   </li>
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                         <input checked id="checkbox-item-12" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-12" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Jese Leos</label>
+                        <label for="checkbox-item-12" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Today</label>
                       </div>
                   </li>
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-13" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-13" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Michael Gough</label>
+                      <label for="checkbox-item-13" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Last 3 Days</label>
                     </div>
                   </li>
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-14" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-14" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Robert Wall</label>
+                      <label for="checkbox-item-14" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Last 7 Days</label>
                     </div>
                   </li>
-                  <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-15" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-15" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Joseph Mcfall</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-16" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-16" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Leslie Livingston</label>
-                    </div>
-                  </li>
-                        <li>
-                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <input id="checkbox-item-17" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-17" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Roberta Casas</label>
-                    </div>
-                  </li>
+                 
+                 
+                      
                 </ul>
             
             </div>
             <div class="z-10 mt-5 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
                
-                <h1  class='lg:text-xl xl:text-3xl'>
+                <h1  class='lg:text-xl xl:text-2xl'>
                   Employment Type
                 </h1>
                 <ul class=" px-3 pb-3 overflow-y-auto  text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-11" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Bonnie Green</label>
+                      <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Full-time (555)</label>
                     </div>
                   </li>
                 
@@ -131,13 +94,19 @@
                   <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-16" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-16" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Leslie Livingston</label>
+                      <label for="checkbox-item-16" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Part Time (100)</label>
                     </div>
                   </li>
                         <li>
                     <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                       <input id="checkbox-item-17" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                      <label for="checkbox-item-17" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Roberta Casas</label>
+                      <label for="checkbox-item-17" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Contract (300)</label>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <input id="checkbox-item-17" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                      <label for="checkbox-item-17" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Third Party  (223)</label>
                     </div>
                   </li>
                 </ul>
@@ -145,7 +114,23 @@
             </div>
             <div class="z-10 mt-5 bg-white rounded-lg shadow mb-10 w-60 dark:bg-gray-700">
                
-                <h1  class='lg:text-xl xl:text-3xl'>
+              <h1  class='lg:text-xl xl:text-2xl'>
+              Work Authorization
+              </h1>
+              <ul class=" px-3 pb-3 overflow-y-auto  text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
+                <li>
+                  <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <input id="checkbox-item-11" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-11" class="w-full ms-2  font-medium text-gray-900 rounded dark:text-gray-300">Willing to sponsor</label>
+                  </div>
+                </li>
+               
+              </ul>
+          
+          </div>
+            <div class="z-10 mt-5 bg-white rounded-lg shadow mb-10 w-60 dark:bg-gray-700">
+               
+                <h1  class='lg:text-xl xl:text-2xl'>
                 Easy Apply
                 </h1>
                 <ul class=" px-3 pb-3 overflow-y-auto  text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
@@ -162,7 +147,7 @@
            </div>
          
          </aside></section>
-    <section class= "  flex justify-center w-10/12  xl:w-3/5">
+    <section class= "  flex justify-center xs:w-10/12  xl:w-4/5">  
 
        <div>
        <div 
@@ -180,7 +165,7 @@
             </div>
         </form>
        </div>
-      <div class=" lg:flex justify-center">
+      <div class="">
         <form class="max-w-lg lg:w-1/2 mx-auto mt-10">
           
             <div class="flex">
@@ -223,6 +208,7 @@
                 </div>
             </div>
         </form>
+        
         <form class="max-w-lg lg:w-1/2 mx-auto  mt-10">   
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative">

@@ -84,24 +84,30 @@ $images =glob($storageAppPath . '/*.*');
     >
 
         <div class="flex flex-col items-center hover:bg-indigo-800 justify-center text-white text-medium   bg-indigo-600 py-7 px-4 item">
-            <dt class="mb-2 text-3xl font-extrabold">IT</dt>
+          <i class="fa-solid text-md fa-code"></i>
+            
+          <dt class="mb-2 mt-3  text-3xl font-extrabold">IT</dt>
             
         </div>
         <div class="flex flex-col items-center hover:bg-indigo-800 justify-center text-white text-medium   bg-indigo-600 py-7 px-4 item">
-            <dt class="mb-2 text-3xl font-extrabold"> Construction </dt>
+          <i class="fa-solid text-md  fa-building"></i>  
+          <dt class="mb-2 mt-3  text-3xl font-extrabold"> Construction </dt>
             
         </div>
         <div class="flex flex-col items-center hover:bg-indigo-800 justify-center text-white text-medium   bg-indigo-600 py-7 px-4 item">
-            <dt class="mb-2 text-3xl font-extrabold">Design</dt>
+          <i class="fa-solid  text-md fa-pen-nib"></i>  
+          <dt class="mb-2 mt-3  text-3xl font-extrabold">Design</dt>
             
         </div>
         <div class="flex flex-col items-center hover:bg-indigo-800 justify-center text-white text-medium   bg-indigo-600 py-7 px-4 item">
-            <dt class="mb-2 text-3xl font-extrabold">Human Resources</dt>
+          <i class="fa-solid fa-people-group text-md"></i>
+          <dt class="mb-2 mt-3  text-3xl font-extrabold">Human Resources</dt>
             
         </div>
 
         <div class="flex flex-col items-center hover:bg-indigo-800 justify-center text-white text-medium   bg-indigo-600 py-7 px-4 item">
-            <dt class="mb-2 text-3xl font-extrabold">Marketing</dt>
+          <i class="fa-solid fa-chart-simple text-md"></i>  
+          <dt class="mb-2 mt-3  text-3xl font-extrabold">Marketing</dt>
             
         </div>
         
@@ -153,7 +159,7 @@ $images =glob($storageAppPath . '/*.*');
             >
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+        <img class=" w-12" src="{{asset('storage/images/top-companies/2.webp')}}" alt="">
         <h1
             class=" text-center mt-3 text-2xl "
         >GitHub</h1>
@@ -161,42 +167,49 @@ $images =glob($storageAppPath . '/*.*');
 </div>
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+               <img class=" w-12" src="{{asset('storage/images/top-companies/3.webp')}}" alt="">
+
         <h1
             class=" text-center mt-3 text-2xl "
-        >GitHub</h1>
+        >Amazon</h1>
     </div>
 </div>
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+               <img class=" w-12" src="{{asset('storage/images/top-companies/8.webp')}}" alt="">
+
         <h1
             class=" text-center mt-3 text-2xl "
-        >GitHub</h1>
+        >
+        Microsoft
+      </h1>
     </div>
 </div>
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+               <img class=" w-12" src="{{asset('storage/images/top-companies/9.webp')}}" alt="">
+
         <h1
             class=" text-center mt-3 text-2xl "
-        >GitHub</h1>
+        >Nividia</h1>
     </div>
 </div>
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+               <img class=" w-12" src="{{asset('storage/images/top-companies/6.webp')}}" alt="">
+
         <h1
             class=" text-center mt-3 text-2xl "
-        >GitHub</h1>
+        >Google</h1>
     </div>
 </div>
 <div class="w-32   mx-auto mt-10">
     <div class= "flex justify-evenly gap-x-6">
-        <img class=" w-12" src="{{asset('storage/images/logo.jpg')}}" alt="">
+               <img class=" w-12" src="{{asset('storage/images/top-companies/7.webp')}}" alt="">
+
         <h1
             class=" text-center mt-3 text-2xl "
-        >GitHub</h1>
+        >JPM</h1>
     </div>
 </div>
 
