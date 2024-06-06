@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,12 +17,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/about', fn () => view('About'));
+Route::get('/about', fn () => view('About'))->name('about');
 Route::get('/jobs', [HomeController::class, 'jobs']);
-Route::get('/login', fn () => view('auth/login'));
-Route::get('/register', fn () => view('auth/register'));
-Route::get('/job-apply', fn () => view('AppliedJob'));
-Route::get('/test', fn () => view('test'));
+Route::prefix('auth')->group(function () {
+    Route::get('/login', fn () => view('auth/login'))->name('auth.login');
+
+    Route::post('/register', [AuthController::class, 'makeRegister'])->name('auth.register');
+    Route::get('/register', [AuthController::class, 'register'])->name('auth.register');
+});
+
+Route::get('/job-apply', [JobController::class, 'apply']);
+
+Route::get('/test', [HomeController::class, 'test']);
 Route::get('/advice', fn () => view('Advice'));
 Route::get('/partner-companies', fn () => view('Companies'));
 Route::get('/job-posting', fn () => view('JobPostForm'));
+
+
+
+// 

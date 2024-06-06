@@ -46,7 +46,7 @@ class="container mx-auto mt-14"
 
         Featured Articles
     </h2>
-    <div 
+    {{-- <div 
     class=" mt-10"
 
 >
@@ -82,7 +82,7 @@ class="container mx-auto mt-14"
         </div>
         
     </div>
-</div>
+</div> --}}
  
 
         <div class="my_card mt-12 grid grid-cols-1 sm:grid-cols-1 w-full md:grid-cols-1 lg:grid-cols-3 gap-4">

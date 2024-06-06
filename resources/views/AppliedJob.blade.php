@@ -13,25 +13,25 @@ class=" lg:flex justify-center gap-36 p-6"
     <section class="flex justify-center lg:block  lg:w-2/5">
         <div class="   rounded-lg ">
             
-                <img class="rounded-t-lg" src="{{ asset('storage/images/jobone.png') }}" alt="" />
+                <img class="rounded-t-lg" src="{{ asset('storage/images').'/job'.$job->image }}" alt="" />
             
     
          
             <div class="p-5 flex flex-col  justify-between gap-y-4">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Backend Developer </h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{$job->name}} </h5>
                 </a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    NextGen Solutions
+                  {{$job->companyName}}
                 </p>
                 <div>
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">Hybrid</span>
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i> 2024-05-14</span>
+                    <span class="bg-blue-100 text-blue1000-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->jobType}}</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i> {{$job->date}}/span>
         
                 </div> 
                  <div class=" mt-4">
                     
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> 1000$\month</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> {{$job->salary}}\month</span>
         
                 </div>
                 <div class=" my-5 flex justify-start  gap-y-3 flex-wrap">
@@ -42,6 +42,44 @@ class=" lg:flex justify-center gap-36 p-6"
                     @endforeach
                    
                 </div>
+                <div class=" mt-4">
+                    
+                  <span class=" text-md font-medium  py-2 rounded dark:bg-blue-900 dark:text-blue-300"> 
+
+                   {{$job->description}}
+                  </span>
+      
+              </div>
+
+              <div class=" mt-4">
+                <h1 class=" text-black  text-lg">
+                  Responsibilities
+                </h1>
+                <ul class=" list-decimal	">
+                  @foreach ($job->responsibilities as $item)
+                  <li>
+                    {{$item}}
+                  </li>
+                  @endforeach
+                </ul>
+
+    
+            </div>
+
+            <div class=" mt-4">
+              <h1 class=" text-black  text-lg">
+                Qualifications
+              </h1>
+              <ul class=" list-decimal	">
+                @foreach ($job->qualifications as $item)
+                <li>
+                  {{$item}}
+                </li>
+                @endforeach
+              </ul>
+
+  
+          </div>
         
             </div>
         </div>
@@ -226,14 +264,7 @@ class=" lg:flex justify-center gap-36 p-6"
             Apply
           </button>
         </div>
-        <div>
-          <div class="mt-2 text-gray-700 text-right text-xs">
-            by
-            <a href="https://herotofu.com" class="hover:underline" target="_blank"
-              >HeroTofu</a
-            >
-          </div>
-        </div>
+      
       </form>
     </div>
   </div>

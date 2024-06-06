@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreJobRequest;
-use App\Http\Requests\UpdateJobRequest;
-use App\Models\Job;
+use App\Http\Requests\StoreProfileTypeRequest;
+use App\Http\Requests\UpdateProfileTypeRequest;
+use App\Models\ProfileType;
 
-class JobController extends Controller
+class ProfileTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +14,6 @@ class JobController extends Controller
     public function index()
     {
         //
-    }
-
-    public function apply()
-    {
-        $sampleJob = Job::JobList();
-
-        return view('AppliedJob', ['job' => $sampleJob[0]]);
     }
 
     /**
@@ -34,7 +27,7 @@ class JobController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreJobRequest $request)
+    public function store(StoreProfileTypeRequest $request)
     {
         //
     }
@@ -42,7 +35,7 @@ class JobController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Job $job)
+    public function show(ProfileType $profileType)
     {
         //
     }
@@ -50,7 +43,7 @@ class JobController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Job $job)
+    public function edit(ProfileType $profileType)
     {
         //
     }
@@ -58,7 +51,7 @@ class JobController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateJobRequest $request, Job $job)
+    public function update(UpdateProfileTypeRequest $request, ProfileType $profileType)
     {
         //
     }
@@ -66,7 +59,7 @@ class JobController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Job $job)
+    public function destroy(ProfileType $profileType)
     {
         //
     }

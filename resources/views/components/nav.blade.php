@@ -20,15 +20,15 @@
                     <a id="nav-home" href="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0" >Home</a>
                 </li>
                 <li class=" mb-7">
-                    <a id="nav-about" href="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">About</a>
+                    <a id="nav-about" href="{{route('about')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">About</a>
                 </li>
                 <li class=" mb-7">
                     <a id="nav-jobs" href="/jobs" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Jobs</a>
                 </li>
                 <li class="flex justify-start items-center  mb-7">
-                    <a id="nav-login" href="/login" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Login</a>
+                    <a id="nav-login" href="{{route('auth.login')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Login</a>
                     <span>/</span>
-                    <a id="nav-register" href="/register" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Register</a>
+                    <a id="nav-register" href="{{route('auth.register')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Register</a>
                 </li>
                 <li class="mb-7">
                     <a id="nav-adivce" href="/advice" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Finding a job</a>

@@ -2,9 +2,9 @@
 @vite('resources/css/app.css')
 
 
+{{-- old design  --}}
 
-
-
+{{-- 
     <div class="max-w-sm  bg-white border   border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
             <img class="rounded-t-lg h-52" src="{{ asset('storage/images/job'.$job->image) }}" alt="" />
@@ -48,5 +48,41 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
+    
+
+    <div
+    class="relative  flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow hover:shadow-2xl transition-all">
+    <div
+      class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+      <img
+      src="{{ asset('storage/images/top-companies/meta.jpg') }}"
+     
+        class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+      <div class="flex w-full flex-col gap-0.5">
+        <div class="flex items-center justify-between">
+          <h5
+            class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            {{$job->name}}
+          </h5>
+         
+        </div>
+        <p class="block font-sans text-base antialiased font-bold leading-relaxed text-blue-gray-900">
+        by   {{$job->companyName}} in {{$job->category}}
+        </p>
+      </div>
+    </div>
+  
+      <div class=" flex  ms-4">
+        <div class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->jobType}}</div>
+    
+        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> {{$job->salary}}\month</span>
+  
+  
+    </div> 
+    <div class=" text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i>   {{ getDayLeft($job->date)  }} Days left </div>
+  
+   
+   
+  </div>  

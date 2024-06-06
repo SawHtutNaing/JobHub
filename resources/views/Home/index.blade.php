@@ -43,35 +43,129 @@ $images =glob($storageAppPath . '/*.*');
         
         
             </h1>
+            <p 
+             class=" ps-11 mt-5 text-lg"
+              >
+              We connect you with thousands of job opportunities tailored to your skills and passions. Upload your resume, set personalized job alerts, and access expert career advice to navigate your job search with confidence.
+            </p>
          </div>
-            <div class=" lg:flex justify-center">
-                <form class="max-w-lg lg:w-1/2 mx-auto mt-10">
-                  
-   
-                       
-                      
-                        
-                        <div class="relative w-full">
-                            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg  border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"  placeholder="Type here to search .." required />
-                            <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                                </svg>
-                                <span class="sr-only">Search</span>
-                            </button>
-                        </div>
-                    
-                </form>
-           
-              </div>
+          
         </div>
     
     <div class="  lg:w-1/2 mx-auto lg:h-full">
         <img src="{{asset('storage/images/hero.svg')}}" alt="" class=" w-full h-full ">
     </div>
 </div>
+<div class=" lg:flex justify-center ">
+  <form class="w-1/2   mx-auto mt-10">
+    
+
+         
+        
+          
+    <div class="relative w-full flex flex-col lg:flex-row">
+      <input type="search" id="search-dropdown" class="p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Jobs title.." required />
+      <input type="search" id="search-dropdown" class="p-2.5 w-full text-sm text-gray-900 bg-gray-50  border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="City name .." required />
+    
+      {{-- <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300  hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button"><span class=" lg:block">Jobs categories</span>
+         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg>
+    </button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">IT</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Construction</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Design</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Human Resources</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Marketing</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Human Resources</button>
+                </li>
+           
+    
+                </ul>
+            </div> --}}
+    
+      <button type="submit" class="p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none flex justify-center items-center focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+        </svg>
+        <span class="sr-only">Search</span>
+      </button>
+    </div>
+    
+      
+  </form>
+
+</div>
+
+<section class=" container w-screen mx-auto mt-28 flex  justify-between" >
+  <div 
+    class=" w-1/5  text-start"
+  >
+    <h1 class="  text-4xl text-black font-bold">
+      8,453  <span class=" ms-5"><i class="fa-solid fa-briefcase"></i></span>
+    </h1>
+    <h4  class=" text-2xl text-black font-normal">
+      Live Jobs 
+    </h4>
+    <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem magni totam veniam maiores, quasi et nulla. Repellendus, sit tempora!
+    </p>
+  </div>
+  <div 
+  class=" w-1/5  text-start"
+>
+  <h1 class="  text-4xl text-black font-bold">
+    8,453  <span class=" ms-5"><i class="fa-solid fa-briefcase"></i></span>
+  </h1>
+  <h4  class=" text-2xl text-black font-normal">
+    Live Jobs 
+  </h4>
+  <p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem magni totam veniam maiores, quasi et nulla. Repellendus, sit tempora!
+  </p>
+</div>
 <div 
-    class=" mt-10"
+class=" w-1/5  text-start"
+>
+<h1 class="  text-4xl text-black font-bold">
+  8,453  <span class=" ms-5"><i class="fa-solid fa-briefcase"></i></span>
+</h1>
+<h4  class=" text-2xl text-black font-normal">
+  Live Jobs 
+</h4>
+<p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem magni totam veniam maiores, quasi et nulla. Repellendus, sit tempora!
+</p>
+</div>
+<div 
+class=" w-1/5  text-start"
+>
+<h1 class="  text-4xl text-black font-bold">
+  8,453  <span class=" ms-5"><i class="fa-solid fa-briefcase"></i></span>
+</h1>
+<h4  class=" text-2xl text-black font-normal">
+  Live Jobs 
+</h4>
+<p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem magni totam veniam maiores, quasi et nulla. Repellendus, sit tempora!
+</p>
+</div>
+</section >
+{{-- <div 
+    class="  mt-16"
 
 >
     <h1
@@ -111,10 +205,14 @@ $images =glob($storageAppPath . '/*.*');
             
         </div>
         
-    </div>
+    </div> --}}
 </div>
 
-<div class="mt-10 mx-auto w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4">
+<h1 class=" text-end text-green-600  text-2xl w-10/12 mt-20">
+  <a href="/jobs">View all jobs </a>
+</h1>
+
+<div class="mt-10 mx-auto w-5/6 grid grid-cols-1 md:grid-cols-2  gap-4">
 
     @for ($i = 0; $i < count($jobs); $i++) <div class=" mt-10 ">
         @include('components.JobCard',['job'=>$jobs[$i]])
@@ -153,8 +251,8 @@ $images =glob($storageAppPath . '/*.*');
     </p>
     </div>
     <div>
-
-        <div
+{{-- old top companies  --}}
+        {{-- <div
         class= "grid mt-20 grid-flow-row-dense grid-cols-3 grid-rows-3"
             >
 <div class="w-32   mx-auto mt-10">
@@ -213,7 +311,192 @@ $images =glob($storageAppPath . '/*.*');
     </div>
 </div>
 
+        </div> --}}
+
+        <div
+        class= "grid mt-20 grid-flow-row-dense grid-cols-3 ps-12 "
+        >
+        <div class="max-w-xs mx-auto bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+          <div class="border-b px-4 pb-6">
+              <div class="text-center my-4">
+                  <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4"
+                  src="{{asset('storage/images/top-companies/3.webp')}}"
+                       alt="">
+                  <div class="py-2">
+                      <h3 class="font-bold text-2xl text-gray-800 dark:text-white mb-1">Cait Genevieve</h3>
+                      <div class="inline-flex text-gray-700 dark:text-gray-300 items-center">
+                          <svg class="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1" fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                              <path class=""
+                                  d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                          </svg>
+                          New York, NY
+                      </div>
+                  </div>
+              </div>
+              <div class="flex gap-2 px-2">
+                  <button
+                      class="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2">
+                      Follow
+                  </button>
+                
+              </div>
+          </div>
+          <p class=" p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti nesciunt autem dolorem recusandae aperiam incidunt consectetur suscipit sapiente aut.
+          </p>
+          <div class="px-4 py-4">
+              <div class="flex gap-2 items-center text-gray-800 dark:text-gray-300 mb-4">
+                  <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path class=""
+                          d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                  </svg>
+                  <span><strong class="text-black dark:text-white">1005</strong> Followers</span>
+              </div>
+              <div class="flex">
+                  <div class="flex justify-end mr-2">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/women/31.jpg" alt="">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/men/33.jpg" alt="">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                      <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                          src="https://randomuser.me/api/portraits/women/42.jpg" alt="">
+                      <span
+                          class="flex items-center justify-center bg-white dark:bg-gray-800 text-sm text-gray-800 dark:text-white font-semibold border-2 border-gray-200 dark:border-gray-700 rounded-full h-10 w-10">
+                          +999
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="max-w-xs mx-auto bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+        <div class="border-b px-4 pb-6">
+            <div class="text-center my-4">
+                <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4"
+                src="{{asset('storage/images/top-companies/4.webp')}}"
+                     alt="">
+                <div class="py-2">
+                    <h3 class="font-bold text-2xl text-gray-800 dark:text-white mb-1">Cait Genevieve</h3>
+                    <div class="inline-flex text-gray-700 dark:text-gray-300 items-center">
+                        <svg class="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path class=""
+                                d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                        </svg>
+                        New York, NY
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 px-2">
+                <button
+                    class="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2">
+                    Follow
+                </button>
+              
+            </div>
         </div>
+        <p class=" p-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti nesciunt autem dolorem recusandae aperiam incidunt consectetur suscipit sapiente aut.
+        </p>
+        <div class="px-4 py-4">
+            <div class="flex gap-2 items-center text-gray-800 dark:text-gray-300 mb-4">
+                <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path class=""
+                        d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                </svg>
+                <span><strong class="text-black dark:text-white">1005</strong> Followers</span>
+            </div>
+            <div class="flex">
+                <div class="flex justify-end mr-2">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/women/31.jpg" alt="">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/men/33.jpg" alt="">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                    <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                        src="https://randomuser.me/api/portraits/women/42.jpg" alt="">
+                    <span
+                        class="flex items-center justify-center bg-white dark:bg-gray-800 text-sm text-gray-800 dark:text-white font-semibold border-2 border-gray-200 dark:border-gray-700 rounded-full h-10 w-10">
+                        +999
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-xs mx-auto bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+      <div class="border-b px-4 pb-6">
+          <div class="text-center my-4">
+              <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4"
+              src="{{asset('storage/images/top-companies/5.webp')}}"
+                   alt="">
+              <div class="py-2">
+                  <h3 class="font-bold text-2xl text-gray-800 dark:text-white mb-1">Cait Genevieve</h3>
+                  <div class="inline-flex text-gray-700 dark:text-gray-300 items-center">
+                      <svg class="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path class=""
+                              d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                      </svg>
+                      New York, NY
+                  </div>
+              </div>
+          </div>
+          <div class="flex gap-2 px-2">
+              <button
+                  class="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2">
+                  Follow
+              </button>
+            
+          </div>
+      </div>
+      <p class=" p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti nesciunt autem dolorem recusandae aperiam incidunt consectetur suscipit sapiente aut.
+      </p>
+      <div class="px-4 py-4">
+          <div class="flex gap-2 items-center text-gray-800 dark:text-gray-300 mb-4">
+              <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path class=""
+                      d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+              </svg>
+              <span><strong class="text-black dark:text-white">1005</strong> Followers</span>
+          </div>
+          <div class="flex">
+              <div class="flex justify-end mr-2">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/women/31.jpg" alt="">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/men/33.jpg" alt="">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                  <img class="border-2 border-white dark:border-gray-800 rounded-full h-10 w-10 -mr-2"
+                      src="https://randomuser.me/api/portraits/women/42.jpg" alt="">
+                  <span
+                      class="flex items-center justify-center bg-white dark:bg-gray-800 text-sm text-gray-800 dark:text-white font-semibold border-2 border-gray-200 dark:border-gray-700 rounded-full h-10 w-10">
+                      +999
+                  </span>
+              </div>
+          </div>
+      </div>
+  </div>
+
     </div>
 </section>
 
@@ -310,7 +593,7 @@ $images =glob($storageAppPath . '/*.*');
           <p class="mt-4 text-lg leading-8 ">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
           <div class="mt-6 flex max-w-md gap-x-4">
             <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
             <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
           </div>
         </div>
