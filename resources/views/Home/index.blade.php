@@ -39,7 +39,7 @@ $images =glob($storageAppPath . '/*.*');
             <h1 
             class=" text-2xl  lg:text-4xl h1 bold  text-center font-sans"
                 >
-                Welcome to Job Hub – Your Premier Job Finding Network
+                Welcome to Job Hub  , {{Auth::check()?? Auth::user()->name}}  Your Premier Job Finding Network
         
         
             </h1>
@@ -209,7 +209,7 @@ class=" w-1/5  text-start"
 </div>
 
 <h1 class=" text-end text-green-600  text-2xl w-10/12 mt-20">
-  <a href="/jobs">View all jobs </a>
+  <a href="/jobs-view">View all jobs </a>
 </h1>
 
 <div class="mt-10 mx-auto w-5/6 grid grid-cols-1 md:grid-cols-2  gap-4">

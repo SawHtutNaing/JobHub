@@ -1,5 +1,5 @@
 <?php 
-$subCategories = ["Node.js", "Express", "MongoDB"]
+// $subCategories = ["Node.js", "Express", "MongoDB"]
 ?>
 @extends('layouts.app')
 
@@ -13,7 +13,9 @@ class=" lg:flex justify-center gap-36 p-6"
     <section class="flex justify-center lg:block  lg:w-2/5">
         <div class="   rounded-lg ">
             
-                <img class="rounded-t-lg" src="{{ asset('storage/images').'/job'.$job->image }}" alt="" />
+                <img class="rounded-t-lg"
+                src={{asset('images').'/'.$job->job_imagePath}}
+        alt="" />
             
     
          
@@ -25,8 +27,8 @@ class=" lg:flex justify-center gap-36 p-6"
                   {{$job->companyName}}
                 </p>
                 <div>
-                    <span class="bg-blue-100 text-blue1000-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->jobType}}</span>
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i> {{$job->date}}/span>
+                    <span class="bg-blue-100 text-blue1000-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->employmentType}}</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i> {{$job->date}}</span>
         
                 </div> 
                  <div class=" mt-4">
@@ -35,8 +37,8 @@ class=" lg:flex justify-center gap-36 p-6"
         
                 </div>
                 <div class=" my-5 flex justify-start  gap-y-3 flex-wrap">
-        
-                    @foreach ($subCategories as $item)
+                  
+                    @foreach ($job->subCategories as $item)
                     <span class="  bg-green-100 text-green-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-green-900 dark:text-green-300">{{$item}}</span>
                         
                     @endforeach
@@ -51,31 +53,36 @@ class=" lg:flex justify-center gap-36 p-6"
       
               </div>
 
-              <div class=" mt-4">
+              {{-- <div class=" mt-4">
                 <h1 class=" text-black  text-lg">
                   Responsibilities
                 </h1>
                 <ul class=" list-decimal	">
+               @if (count($job->responsibilities) > 0 )
+
                   @foreach ($job->responsibilities as $item)
                   <li>
                     {{$item}}
                   </li>
                   @endforeach
+                  @endif
                 </ul>
 
     
-            </div>
+            </div> --}}
 
             <div class=" mt-4">
               <h1 class=" text-black  text-lg">
                 Qualifications
               </h1>
               <ul class=" list-decimal	">
-                @foreach ($job->qualifications as $item)
-                <li>
-                  {{$item}}
-                </li>
-                @endforeach
+               @if (count($job->qualifications) > 0 )
+               @foreach ($job->qualifications as $item)
+               <li>
+                 {{$item}}
+               </li>
+               @endforeach
+               @endif
               </ul>
 
   
@@ -91,9 +98,11 @@ class=" lg:flex justify-center gap-36 p-6"
     <div class="p-6  sm:rounded-md">
       <form
         method="POST"
-        action="https://herotofu.com/start"
+        action="{{route('jobApplyDetail')}}"
         enctype="multipart/form-data"
       >
+      @csrf 
+      <input type="hidden" value="{{$job->id}}" name="job_id">
         <label class="block mb-6">
           <span class="text-gray-700">Your name</span>
           <input
@@ -140,7 +149,7 @@ class=" lg:flex justify-center gap-36 p-6"
           <span class="text-gray-700">Years of experience</span>
           <select
             required
-            name="experience"
+            name="exp_years"
             class="
               block
               w-full
@@ -154,18 +163,18 @@ class=" lg:flex justify-center gap-36 p-6"
               focus:ring-opacity-50
             "
           >
-            <option>Less than a year</option>
-            <option>1 - 2 years</option>
-            <option>2 - 4 years</option>
-            <option>4 - 7 years</option>
-            <option>7 - 10 years</option>
-            <option>10+ years</option>
+            <option value="0">Less than a year</option>
+            <option value="1-2">1 - 2 years</option>
+            <option value="2-4">2 - 4 years</option>
+            <option value="4-7">4 - 7 years</option>
+            <option value="7-10">7 - 10 years</option>
+            <option value="10+">10+ years</option>
           </select>
         </label>
         <label class="block mb-6">
           <span class="text-gray-700">Tell us more about yourself</span>
           <textarea
-            name="message"
+            name="cover_letter"
             class="
               block
               w-full
@@ -186,7 +195,7 @@ class=" lg:flex justify-center gap-36 p-6"
           <span class="text-gray-700">Your CV</span>
           <input
             required
-            name="cv"
+            name="cv_file"
             type="file"
             class="
               block
@@ -204,9 +213,10 @@ class=" lg:flex justify-center gap-36 p-6"
             <div>
               <label class="inline-flex items-center">
                 <input
-                  name="remote"
-                  value="yes"
+                  name="prefered_type"
+                  value="remote"
                   type="radio"
+                  
                   class="
                     text-indigo-600
                     border-gray-300
@@ -226,8 +236,8 @@ class=" lg:flex justify-center gap-36 p-6"
             <div>
               <label class="inline-flex items-center">
                 <input
-                  name="re"
-                  value="no"
+                  name="prefered_type"
+                  value="onsite"
                   type="radio"
                   class="
                     text-indigo-600
@@ -247,22 +257,24 @@ class=" lg:flex justify-center gap-36 p-6"
           </div>
         </div>
         <div class="mb-6">
-          <button
-            type="submit"
-            class="
-              h-10
-              px-5
-              text-indigo-100
-              bg-indigo-700
-              rounded-lg
-              transition-colors
-              duration-150
-              focus:shadow-outline
-              hover:bg-indigo-800
-            "
-          >
-            Apply
-          </button>
+        @if (Auth::user()->ProfileType?->title == 'personal')
+        <button
+        type="submit"
+        class="
+          h-10
+          px-5
+          text-indigo-100
+          bg-indigo-700
+          rounded-lg
+          transition-colors
+          duration-150
+          focus:shadow-outline
+          hover:bg-indigo-800
+        "
+      >
+        Apply
+      </button>
+        @endif
         </div>
       
       </form>

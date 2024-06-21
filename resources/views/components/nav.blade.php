@@ -14,31 +14,56 @@
                     d="M1 1h15M1 7h15M1 13h15" />
             </svg>
         </button>
+
+        
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                 <li class=" mb-7">
                     <a id="nav-home" href="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0" >Home</a>
                 </li>
+                @auth
+                    
+                <li class=" mb-7">
+                    <a id="nav-home" href="{{route('profile')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0" >Profile</a>
+                </li>
+                @endauth
                 <li class=" mb-7">
                     <a id="nav-about" href="{{route('about')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">About</a>
                 </li>
                 <li class=" mb-7">
                     <a id="nav-jobs" href="/jobs" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Jobs</a>
                 </li>
+
+               
+                @guest
+                    
+                
                 <li class="flex justify-start items-center  mb-7">
                     <a id="nav-login" href="{{route('auth.login')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Login</a>
                     <span>/</span>
                     <a id="nav-register" href="{{route('auth.register')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Register</a>
                 </li>
-                <li class="mb-7">
-                    <a id="nav-adivce" href="/advice" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Finding a job</a>
-                </li>
+                @endguest
+
+
+              @auth
+              @if(Auth::check() &&  Auth::user()->ProfileType?->title == 'personal') 
+              <li class="mb-7">
+                  <a id="nav-adivce" href="/advice" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Finding a job</a>
+              </li>
+              @endif
+              @endauth
                 <li class="mb-7">
                     <a id="nav-partner" href="/partner-companies" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Companies</a>
                 </li>
-                <li class="mb-7">
-                    <a id="nav-jobposting" href="/job-posting" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Post a job</a>
-                </li>
+             @auth
+                 
+             @if(Auth::check() &&  Auth::user()->ProfileType?->title == 'company') 
+             <li class="mb-7">
+                 <a id="nav-jobposting" href="/jobs/create" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Post a job</a>
+             </li>
+             @endif
+             @endauth
             </ul>
         </div>
     </div>
@@ -54,7 +79,7 @@
             '/register': document.getElementById('nav-register'),
             '/advice': document.getElementById('nav-adivce') ,
             '/partner-companies' : document.getElementById('nav-partner') ,
-            '/job-posting' : document.getElementById('nav-jobposting')
+            '/jobs/create' : document.getElementById('nav-jobposting')
             
         };
 

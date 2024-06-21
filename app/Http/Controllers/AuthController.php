@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ProfileType;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Monolog\Handler\RollbarHandler;
 use Symfony\Component\HttpKernel\Profiler\Profile;
 
@@ -47,5 +48,26 @@ class AuthController extends Controller
 
 
         return redirect(route('auth.login'));
+    }
+
+    public function login(Request $request)
+
+    {
+
+        if (Auth::attempt($request->only('email', 'password'))) {
+
+            return redirect(route('home'));
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->withInput();
+    }
+
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('auth.login');
     }
 }

@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('Home/index', ['jobs' => array_slice(Job::JobList(), 0, 5)]);
+        return view('Home/index', ['jobs' => Job::JobList()]);
     }
 
     public function login()

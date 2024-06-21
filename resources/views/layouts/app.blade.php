@@ -17,7 +17,7 @@
     <header>
         @include('components/nav')
     </header>
-    <div class=" container-lg mt-20 mx-auto">
+    <div class="min-h-screen  container-lg mt-20 mx-auto">
         
         @yield('content')
     </div>

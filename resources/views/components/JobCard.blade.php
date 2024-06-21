@@ -57,7 +57,9 @@
     <div
       class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
       <img
-      src="{{ asset('storage/images/top-companies/meta.jpg') }}"
+      {{-- src="{{ asset('storage/images/top-companies/meta.jpg') }}"
+       --}}
+       src={{asset('images').'/'.$job->job_imagePath}}
      
         class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
       <div class="flex w-full flex-col gap-0.5">
@@ -75,13 +77,13 @@
     </div>
   
       <div class=" flex  ms-4">
-        <div class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->jobType}}</div>
+        <div class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300">{{$job->employmentType}}</div>
     
         <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> {{$job->salary}}\month</span>
   
   
     </div> 
-    <div class=" text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i>   {{ getDayLeft($job->date)  }} Days left </div>
+    {{-- <div class=" text-blue-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-blue-900 dark:text-blue-300"> <i class="fa-solid fa-calendar"></i>   {{ getDayLeft($job->date)  }} Days left </div> --}}
   
    
    
