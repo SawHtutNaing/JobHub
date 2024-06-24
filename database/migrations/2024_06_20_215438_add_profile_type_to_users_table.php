@@ -9,14 +9,14 @@ class AddProfileTypeToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('profile_type')->default('personal');
+            // $table->string('profile_type')->default('personal');
         });
     }
 
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('profile_type');
+            // $table->dropColumn('profile_type');
         });
     }
 }

@@ -54,7 +54,7 @@ class UserResource extends Resource
                 TextColumn::make('personalDetails.address')->label('Address'),
                 TextColumn::make('personalDetails.phones')->label('Phones'),
                 TextColumn::make('personalDetails.nationality')->label('Nationality'),
-                ImageColumn::make('personalDetails.profile_img')
+                ImageColumn::make('personalDetails.profile_img')->label('Image')->dire
 
 
 
