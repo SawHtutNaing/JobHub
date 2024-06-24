@@ -20,14 +20,14 @@
 
         
 
-        <img src="{{ asset('storage/images/logo.jpg') }}" class="h-8" alt="Job Hub" />
+        <img src="{{ asset('storage/images/logo.jpg') }}" class="h-8" alt="Hire Hub" />
 
         
       <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
     </div>
   
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form class="space-y-6" action="{{route('auth.login')}}" method="POST" autocomplete="false">
+      <form class="space-y-6" action="{{route('login')}}" method="POST" autocomplete="false">
         @csrf
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
@@ -50,8 +50,8 @@
           <button type="submit" class="flex  min-w-64 mx-auto  mt-10 justify-center rounded-md  bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
         </div>
       </form>
-      <p class="text-sm font-light ">
-       If you don't have an account , <a href="/register" class="font-medium text-primary-600 hover:underline dark:text-primary-500">register here</a>
+      <p class="text-sm font-light text-center mt-6">
+       If you don't have an account , <a href="{{route('auth.register')}}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">register here</a>
     </p>
   
     

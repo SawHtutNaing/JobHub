@@ -14,7 +14,9 @@ class=" lg:flex justify-center gap-36 p-6"
         <div class="   rounded-lg ">
             
                 <img class="rounded-t-lg"
-                src={{asset('images').'/'.$job->job_imagePath}}
+ 
+
+                src={{asset('storage').'/'.$job->job_imagePath}}
         alt="" />
             
     
@@ -37,7 +39,8 @@ class=" lg:flex justify-center gap-36 p-6"
         
                 </div>
                 <div class=" my-5 flex justify-start  gap-y-3 flex-wrap">
-                  
+                  {{-- @if() --}}
+                  {{-- @dd($job->subCategories) --}}
                     @foreach ($job->subCategories as $item)
                     <span class="  bg-green-100 text-green-800 text-sm font-medium me-2 px-4 py-2 rounded dark:bg-green-900 dark:text-green-300">{{$item}}</span>
                         
@@ -257,6 +260,8 @@ class=" lg:flex justify-center gap-36 p-6"
           </div>
         </div>
         <div class="mb-6">
+          @auth
+              
         @if (Auth::user()->ProfileType?->title == 'personal')
         <button
         type="submit"
@@ -275,6 +280,8 @@ class=" lg:flex justify-center gap-36 p-6"
         Apply
       </button>
         @endif
+        @endauth
+
         </div>
       
       </form>

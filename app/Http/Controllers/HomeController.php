@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Job;
+use App\Models\ShowJobStatic;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('Home/index', ['jobs' => Job::JobList()]);
+        $showJobStatics = ShowJobStatic::all();
+
+        return view('Home/index', ['jobs' => Job::JobList(), 'showJobStatics' => $showJobStatics]);
     }
 
     public function login()
@@ -27,5 +31,11 @@ class HomeController extends Controller
     {
 
         return view('test', ['job' => Job::JobList()[0]]);
+    }
+
+    public function about()
+    {
+        $abouts = About::all();
+        return view('About', ['abouts' => $abouts]);
     }
 }

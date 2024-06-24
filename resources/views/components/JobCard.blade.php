@@ -53,13 +53,13 @@
     
 
     <div
-    class="relative  flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow hover:shadow-2xl transition-all">
+    class="relative  flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow hover:shadow-2xl transition-all py-7">
     <div
       class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
       <img
       {{-- src="{{ asset('storage/images/top-companies/meta.jpg') }}"
        --}}
-       src={{asset('images').'/'.$job->job_imagePath}}
+       src={{asset('storage').'/'.$job->job_imagePath}}
      
         class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
       <div class="flex w-full flex-col gap-0.5">

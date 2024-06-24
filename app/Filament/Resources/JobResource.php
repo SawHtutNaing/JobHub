@@ -18,12 +18,18 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Illuminate\Support\Facades\Auth;
+
 
 class JobResource extends Resource
 {
 
     protected static ?string $model = Job::class;
+
+
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     public static function form(Form $form): Form
@@ -49,20 +55,40 @@ class JobResource extends Resource
                 TextInput::make('location'),
                 FileUpload::make('company_logoPath')
                     ->directory('images')
-                    // // ->image()
-                    ->dehydrateStateUsing(function ($state) {
-                        $key = array_keys($state)[0];
-                        $store = asset('images/' . $state[$key]);
-
-                        return $store;
-                    })
-                // ->afterStateHydrated(function ($state) {
-
-                //     return [];
+                // ->dehydrateStateUsing(function ($state) {
+                //     $key = array_keys($state)[0];
+                //     return explode('/', $state[$key])[1];
                 // })
+
+                // ->afterStateHydrated(function ($component, $state) {
+                //     $imagePath = asset('images/' . $state);
+
+                //     // $imagePath = asset('images/' . $get('company_logoPath'));
+
+                //     // $set('company_logoPath', $imagePath);
+
+                //     // dd(asset('images') . '/' . $state);
+                //     // dd($component->state([asset('images') . '/' . $state]));
+
+                //     // // return $state = ['https://media.istockphoto.com/id/1491857076/photo/tree-light-bulb-glowing-hold-in-hand-on-blue-background-concept-of-saving-electricity.webp?s=1024x1024&w=is&k=20&c=Pc8fAuBVEmepq4glK2-c3lbhZj1eZ1-40gh-tg1RO_k='];
+                //     // return $component->state([asset('images') . '/' . $state]);
+
+
+                //     // Check if the file exists
+
+
+                //     $component->state($imagePath);
+                //     // dd($component);
+                // })
+                // ->afterStateHydrated(fn ($component) => $component->callAfterStateUpdated())
                 ,
                 FileUpload::make('job_imagePath')
                     ->directory('images')
+                // ->dehydrateStateUsing(function ($state) {
+                //     $key = array_keys($state)[0];
+                //     // dd(explode('/', $state[$key])[1]);
+                //     return explode('/', $state[$key])[1];
+                // })
 
                 //     ->image()
                 //     ->afterStateHydrated(function (FileUpload $component) {
@@ -80,6 +106,10 @@ class JobResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
+                TextColumn::make('owner.name')
+                    ->getStateUsing(function ($record) {
+                        return $record->owner->name;
+                    }),
                 TextColumn::make('category'),
                 TextColumn::make('subCategories'),
                 TextColumn::make('qualifications'),
@@ -89,14 +119,20 @@ class JobResource extends Resource
                 TextColumn::make('salary'),
                 TextColumn::make('date'),
                 TextColumn::make('location'),
-                ImageColumn::make('company_logoPath')
-                    ->getStateUsing(function ($record) {
-                        return asset('images') . '/' . $record->company_logoPath;
-                    }),
-                ImageColumn::make('job_imagePath')
-                    ->getStateUsing(function ($record) {
-                        return asset('images') . '/' . $record->job_imagePath;
-                    }),
+
+                ImageColumn::make('company_logoPath')->label("Company Photo")
+
+                // ->getStateUsing(function ($record) {
+                //     // dd(asset('images') . '/' . $record->company_logoPath);
+
+                //     return   asset('images') . '/' . $record->company_logoPath;
+                // })
+                ,
+                ImageColumn::make('job_imagePath')->label("Job Photo")
+                // ->getStateUsing(function ($record) {
+                //     return   asset('images') . '/' . $record->job_imagePath;
+                // })
+                ,
 
 
             ])

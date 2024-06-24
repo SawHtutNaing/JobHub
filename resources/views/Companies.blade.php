@@ -94,118 +94,291 @@ class= " grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 "
    
     <div class="mt-10 mx-auto w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4">
         
-        <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/one.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                    Suntory Global Spirits
-                   </h1>
-                   <p>
-                    Consumer Goods & Services , Food & Beverage
-                   </p>
-                </div>
-            </div>
-          </div>
+      <div
+      class=" w-72  h-64 shadow"
+      style="
+     display:flex;
+     align-items:flex-end;
+      background-image:url('https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLGYxBS3WTgb-rDVnUOjLjD4Gt-wSkJrrN8sn6KFkcQe6CAkNF4xfhQNjNKPmXS-5BRgD5md3qyYIoYCqMWcztzY=');
+      background-size:100%; 
+      background-repeat:no-repeat;
+      "
+     >
+       
+     <div class=" h-56 w-full mb-0  bg-white">
+      <div class=" flex  justify-between">
+       <div>
+         <img
+         class="ms-2"
+           style="
+           margin-top:-1rem;
 
-          <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/three.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                    SalesForce
-                   </h1>
-                   <p>
-                 Technology / large size 
-                   </p>
-                </div>
-            </div>
-          </div>
+           width:5rem ;
+           height:5rem;
+           "
+         src="https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLNLW1kzQZys5O5E8iiBjrSnVHUVLHUvh9hdhI6apJRTZQX9iw4xpdas=" alt="">
+       </div>
+       <div class="me-3">
+         <h1 class=" leading-[23px] w-[73px] text-center bg-gradient-to-r from-[#ddac11] to-[#eec34a] rounded-[2px] text-white text-[13px] mt-2">
+           Premium
+         </h1>
+       </div>
+      </div>
+      <div class="mt-3 ms-3 ">
+       <h1 class="underline text-[#462267]"">
+         AIA myanmar 
+       </h1>
+       <p class="text-slate-500">
+         <i class="fa-solid fa-file"></i>
+     
+         <span>
+     
+          Engergy / water
+         </span>
+       </p>
+       <p class= "text-slate-500">
+         <i class="fa-solid fa-briefcase"></i>
+          <span>
+     
+           Engergy / water
+          </span>
+       </p>
+     
+      </div>
+     
+     </div>
+     
+     </div>
+     <div
+     class=" w-72  h-64 shadow"
+     style="
+    display:flex;
+    align-items:flex-end;
+     background-image:url('https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLGYxBS3WTgb-rDVnUOjLjD4Gt-wSkJrrN8sn6KFkcQe6CAkNF4xfhQNjNKPmXS-5BRgD5md3qyYIoYCqMWcztzY=');
+     background-size:100%; 
+     background-repeat:no-repeat;
+     "
+    >
+      
+    <div class=" h-56 w-full mb-0  bg-white">
+     <div class=" flex  justify-between">
+      <div>
+        <img
+        class="ms-2"
+          style="
+          margin-top:-1rem;
 
-          <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/five.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                  DXL
-                   </h1>
-                   <p>
-                    Reality Large Size / Cargon , MA
-                   </p>
-                </div>
-            </div>
-          </div>
+          width:5rem ;
+          height:5rem;
+          "
+        src="https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLNLW1kzQZys5O5E8iiBjrSnVHUVLHUvh9hdhI6apJRTZQX9iw4xpdas=" alt="">
+      </div>
+      <div class="me-3">
+        <h1 class=" leading-[23px] w-[73px] text-center bg-gradient-to-r from-[#ddac11] to-[#eec34a] rounded-[2px] text-white text-[13px] mt-2">
+          Premium
+        </h1>
+      </div>
+     </div>
+     <div class="mt-3 ms-3 ">
+      <h1 class="underline text-[#462267]"">
+        AIA myanmar 
+      </h1>
+      <p class="text-slate-500">
+        <i class="fa-solid fa-file"></i>
+    
+        <span>
+    
+         Engergy / water
+        </span>
+      </p>
+      <p class= "text-slate-500">
+        <i class="fa-solid fa-briefcase"></i>
+         <span>
+    
+          Engergy / water
+         </span>
+      </p>
+    
+     </div>
+    
+    </div>
+    
+    </div>
+    <div
+    class=" w-72  h-64 shadow"
+    style="
+   display:flex;
+   align-items:flex-end;
+    background-image:url('https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLGYxBS3WTgb-rDVnUOjLjD4Gt-wSkJrrN8sn6KFkcQe6CAkNF4xfhQNjNKPmXS-5BRgD5md3qyYIoYCqMWcztzY=');
+    background-size:100%; 
+    background-repeat:no-repeat;
+    "
+   >
+     
+   <div class=" h-56 w-full mb-0  bg-white">
+    <div class=" flex  justify-between">
+     <div>
+       <img
+       class="ms-2"
+         style="
+         margin-top:-1rem;
 
-          <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/six.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                    Suntory Global Spirits
-                   </h1>
-                   <p>
-                    Consumer Goods & Services , Food & Beverage
-                   </p>
-                </div>
-            </div>
-          </div>
+         width:5rem ;
+         height:5rem;
+         "
+       src="https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLNLW1kzQZys5O5E8iiBjrSnVHUVLHUvh9hdhI6apJRTZQX9iw4xpdas=" alt="">
+     </div>
+     <div class="me-3">
+       <h1 class=" leading-[23px] w-[73px] text-center bg-gradient-to-r from-[#ddac11] to-[#eec34a] rounded-[2px] text-white text-[13px] mt-2">
+         Premium
+       </h1>
+     </div>
+    </div>
+    <div class="mt-3 ms-3 ">
+     <h1 class="underline text-[#462267]"">
+       AIA myanmar 
+     </h1>
+     <p class="text-slate-500">
+       <i class="fa-solid fa-file"></i>
+   
+       <span>
+   
+        Engergy / water
+       </span>
+     </p>
+     <p class= "text-slate-500">
+       <i class="fa-solid fa-briefcase"></i>
+        <span>
+   
+         Engergy / water
+        </span>
+     </p>
+   
+    </div>
+   
+   </div>
+   
+   </div>
+   <div
+   class=" w-72  h-64 shadow"
+   style="
+  display:flex;
+  align-items:flex-end;
+   background-image:url('https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLGYxBS3WTgb-rDVnUOjLjD4Gt-wSkJrrN8sn6KFkcQe6CAkNF4xfhQNjNKPmXS-5BRgD5md3qyYIoYCqMWcztzY=');
+   background-size:100%; 
+   background-repeat:no-repeat;
+   "
+  >
+    
+  <div class=" h-56 w-full mb-0  bg-white">
+   <div class=" flex  justify-between">
+    <div>
+      <img
+      class="ms-2"
+        style="
+        margin-top:-1rem;
 
-          <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/seven.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                    Geisinger
-                   </h1>
-                   <p>
-                   Healthcare , large size
-                   </p>
-                </div>
-            </div>
-          </div>
+        width:5rem ;
+        height:5rem;
+        "
+      src="https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLNLW1kzQZys5O5E8iiBjrSnVHUVLHUvh9hdhI6apJRTZQX9iw4xpdas=" alt="">
+    </div>
+    <div class="me-3">
+      <h1 class=" leading-[23px] w-[73px] text-center bg-gradient-to-r from-[#ddac11] to-[#eec34a] rounded-[2px] text-white text-[13px] mt-2">
+        Premium
+      </h1>
+    </div>
+   </div>
+   <div class="mt-3 ms-3 ">
+    <h1 class="underline text-[#462267]"">
+      AIA myanmar 
+    </h1>
+    <p class="text-slate-500">
+      <i class="fa-solid fa-file"></i>
+  
+      <span>
+  
+       Engergy / water
+      </span>
+    </p>
+    <p class= "text-slate-500">
+      <i class="fa-solid fa-briefcase"></i>
+       <span>
+  
+        Engergy / water
+       </span>
+    </p>
+  
+   </div>
+  
+  </div>
+  
+  </div>
+  <div
+  class=" w-72  h-64 shadow"
+  style="
+ display:flex;
+ align-items:flex-end;
+  background-image:url('https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLGYxBS3WTgb-rDVnUOjLjD4Gt-wSkJrrN8sn6KFkcQe6CAkNF4xfhQNjNKPmXS-5BRgD5md3qyYIoYCqMWcztzY=');
+  background-size:100%; 
+  background-repeat:no-repeat;
+  "
+ >
+   
+ <div class=" h-56 w-full mb-0  bg-white">
+  <div class=" flex  justify-between">
+   <div>
+     <img
+     class="ms-2"
+       style="
+       margin-top:-1rem;
 
-          <div class="flip-card w-72   h-64">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="{{asset('storage/images/companies_card/eight.jpg')}}"  class="h-full w-full " alt="">
-                </div>
-                <div class="flip-card-back">
-                   <h1>
-                    
-                    Apple 
-                   </h1>
-                   <p>
-                  Information Technology
-                   </p>
-                </div>
-            </div>
-          </div>
+       width:5rem ;
+       height:5rem;
+       "
+     src="https://dmwnucuzzd3uc.cloudfront.net/image/o9SXyF4kPWv_4nhtaCnNLNLW1kzQZys5O5E8iiBjrSnVHUVLHUvh9hdhI6apJRTZQX9iw4xpdas=" alt="">
+   </div>
+   <div class="me-3">
+     <h1 class=" leading-[23px] w-[73px] text-center bg-gradient-to-r from-[#ddac11] to-[#eec34a] rounded-[2px] text-white text-[13px] mt-2">
+       Premium
+     </h1>
+   </div>
+  </div>
+  <div class="mt-3 ms-3 ">
+   <h1 class="underline text-[#462267]"">
+     AIA myanmar 
+   </h1>
+   <p class="text-slate-500">
+     <i class="fa-solid fa-file"></i>
+ 
+     <span>
+ 
+      Engergy / water
+     </span>
+   </p>
+   <p class= "text-slate-500">
+     <i class="fa-solid fa-briefcase"></i>
+      <span>
+ 
+       Engergy / water
+      </span>
+   </p>
+ 
+  </div>
+ 
+ </div>
+ 
+ </div>
           
-          <div class="flip-card w-72   h-64">
+     
+          {{-- <div class="flip-card w-72   h-64">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img src="{{asset('storage/images/companies_card/nine.jpg')}}"  class="h-full w-full " alt="">
                 </div>
-                <div class="flip-card-back">
-                   <h1>
-                 Crown Cork 
-                   </h1>
-                   <p>
-                    Manifacturing 
-                   </p>
-                </div>
+               
             </div>
-          </div>
+          </div> --}}
 
           
     

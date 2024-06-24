@@ -1,8 +1,8 @@
 <nav class="bg-white border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('storage/images/logo.jpg') }}" class=" h-14" alt="Job Hub" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap">Job Hub</span>
+            <img src="{{ asset('storage/images/logo.jpg') }}" class=" h-14" alt="Hire Hub" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">Hire Hub</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -39,7 +39,7 @@
                     
                 
                 <li class="flex justify-start items-center  mb-7">
-                    <a id="nav-login" href="{{route('auth.login')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Login</a>
+                    <a id="nav-login" href="{{route('login')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Login</a>
                     <span>/</span>
                     <a id="nav-register" href="{{route('auth.register')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 border-b-2 md:hover:text-blue-700 md:p-0">Register</a>
                 </li>

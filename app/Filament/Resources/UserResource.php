@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -48,6 +49,15 @@ class UserResource extends Resource
                 TextColumn::make('name'),
                 TextColumn::make('email'),
                 TextColumn::make('profile_type')->label('Type'),
+                TextColumn::make('personalDetails.university')->label('University'),
+                TextColumn::make('personalDetails.birthday')->label('Birthday'),
+                TextColumn::make('personalDetails.address')->label('Address'),
+                TextColumn::make('personalDetails.phones')->label('Phones'),
+                TextColumn::make('personalDetails.nationality')->label('Nationality'),
+                ImageColumn::make('personalDetails.profile_img')
+
+
+
             ])
             ->filters([
                 //

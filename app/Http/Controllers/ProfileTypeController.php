@@ -72,6 +72,7 @@ class ProfileTypeController extends Controller
 
     public function profile()
     {
+
         return view('profile/profile');
     }
 

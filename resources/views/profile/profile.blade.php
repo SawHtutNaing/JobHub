@@ -23,12 +23,27 @@ $user = Auth::user();
         <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
         
           <div>
-               <p class="font-bold text-gray-700 text-xl">7</p>
-            <p class="text-gray-400">Applied Jobs</p>
+               <p class="font-bold text-gray-700 text-xl">
+                {{$user->relatedJob()}}
+
+               </p>
+            <p class="text-gray-400">
+
+              {{
+                $user->profile_type == 'personal' ? ' Applied Jobs' : 'Posted Job'
+              }}
+            </p>
           </div>
           <div>
-            <p class="font-bold text-gray-700 text-xl">4</p>
-         <p class="text-gray-400">Get Interviews</p>
+            <p class="font-bold text-gray-700 text-xl">
+              {{$user->relatedJobAccept()}}
+
+            </p>
+         <p class="text-gray-400">
+          {{
+            $user->profile_type == 'personal' ? 'Get Interviews' : 'To Interview'
+          }}
+          </p>
        </div>
              
         </div>
@@ -95,13 +110,43 @@ $user = Auth::user();
       }} --}}
 
       <div class="mt-10 mx-auto w-5/6 grid grid-cols-1   gap-y-14  gap-4">
-    @foreach ($user->AppliedJOb as $appliedJob)
-    {{-- {{dd($appliedJob)}} --}}
-    <a href="{{route('job-apply',$appliedJob->job->id)}}">
-    @include('components.JobCard',['job'=>$appliedJob->job])
-    </a>
+        @auth
+        @if ($user->profile_type == 'personal')
+
+        @if (count($user->AppliedJOb) > 0)
+        @foreach ($user->AppliedJOb as $appliedJob)
+        {{-- {{dd($appliedJob)}} --}}
+        <a href="{{route('viewMyAppliedJOb',$appliedJob?->job_id)}}">
+          {{-- {{dd($appliedJob?->job)}} --}}
+        @include('components.JobCard',['job'=>$appliedJob->job])
+        </a>
+            
+        @endforeach
+        @endif
+
+     
+ 
+            
+        @elseif($user->profile_type == 'company')
+        @if (count($user->PostedJobs) > 0)
+
+        @foreach ($user->PostedJobs as $postedJob)
         
-    @endforeach
+        <a href="{{route('viewMyPostedJOb',$postedJob?->id)}}">
+        @include('components.JobCard',['job'=>$postedJob])
+        </a>
+            
+        @endforeach
+        @endif
+
+        @endif
+
+       
+
+        @endauth
+
+        
+ 
       </div>
     </div>
     </div>

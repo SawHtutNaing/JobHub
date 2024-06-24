@@ -8,8 +8,8 @@
     <section class="bg-gray-50 ">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-            <img class="w-8 h-8 mr-2" src="{{ asset('storage/images/logo.jpg') }}"  alt="Job Hub">
-Job Hub
+            <img class="w-8 h-8 mr-2" src="{{ asset('storage/images/logo.jpg') }}"  alt="Hire Hub">
+Hire Hub
         </a>
 
         <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -58,7 +58,7 @@ Job Hub
 
                     <button type="submit" form="registerForm" class="w-full  bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white">Create an account</button>
                     <p class="text-sm font-light ">
-                        Already have an account? <a href="/login" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
+                        Already have an account? <a href="{{route('login')}}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
                     </p>
                 </form>
             </div>

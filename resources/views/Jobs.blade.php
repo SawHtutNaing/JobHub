@@ -9,9 +9,9 @@
        </button>
        
          
-       <aside id="sidebar" class="fixed mt-20 top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar"d >
+       <aside id="sidebar" class="fixed mt-20 top-0 left-0 z-40  w-60 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar"d >
 
-        <div class="overflow-y-auto text-center py-5 px-3  h-96 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="overflow-y-auto  overflow-hidden  text-center py-5 px-3  h-[25rem] bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
           <form action="{{route('jobs.index')}}" method="GET"> 
                
             <input type="search" name="title" id="search-dropdown" class="p-2.5 text-sm  w-10/12 text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 mt-5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Jobs title.."  />
@@ -157,7 +157,7 @@
         <div class="mt-10 mx-auto w-5/6 grid grid-cols-1   gap-y-14  gap-4">
         
             @for ($i = 0; $i < count($jobs); $i++) 
-            <a href="{{route('job-apply',$jobs[$i]['id'])}}">
+            <a href="{{Auth::user()->profile_type == 'personal' ? route('job-apply',$jobs[$i]['id']) : '/jobs/' . $jobs[$i]['id'] }}">
               @include('components.JobCard',['job'=>$jobs[$i]])
 
 

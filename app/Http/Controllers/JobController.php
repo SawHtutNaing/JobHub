@@ -11,6 +11,8 @@ use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Date;
+use PhpParser\Builder\Function_;
+use PhpParser\Node\Expr\FuncCall;
 
 class JobController extends Controller
 {
@@ -109,7 +111,7 @@ class JobController extends Controller
         $job_imageName = time() . '.' . $job_image->getClientOriginalExtension();
 
 
-        $request->job_image->move(public_path('images'), $job_imageName);
+        $job_image_file_path =  $request->job_image->move(public_path('storage/images'), $job_imageName);
 
         // for job image 
 
@@ -118,7 +120,7 @@ class JobController extends Controller
         $company_logo = $request->company_logo;
 
         $Company_logoName = time() . '.' . $company_logo->getClientOriginalExtension();
-        $request->company_logo->move(public_path('images'), $Company_logoName);
+        $company_image_file_path = $request->company_logo->move(public_path('storage/images'), $Company_logoName);
         // for company logo
         $subCategory = $request->subCategory;
         $qualifications = $request->qualifications;
@@ -137,8 +139,8 @@ class JobController extends Controller
             'subCategories' => json_encode($subCategoryArray),
             'category' => $request->category,
             'companyName' => $request->companyName,
-            'job_imagePath' => $job_imageName,
-            'company_logoPath' => $Company_logoName,
+            'job_imagePath' => 'images/' . $job_imageName,
+            'company_logoPath' => 'images/' . $Company_logoName,
             'date' => date('Y-m-d H:i:s')
 
         ];
@@ -152,7 +154,7 @@ class JobController extends Controller
      */
     public function show(Job $job)
     {
-        //
+        return view('job_details', compact('job'));
     }
 
     /**
@@ -187,5 +189,22 @@ class JobController extends Controller
         $postedDates = $request->query('postedDate'); // This will be an array
 
 
+    }
+
+    //company to view record and user to view his applied job
+
+    public function userView(Job $job)
+    {
+        $applyDetail = $job->getAppliedDetails[0];
+        // dd($applyDetail);
+
+        return view('JobApply/user_view_applied_job', compact('applyDetail'));
+    }
+
+    public function companyView(Job $job)
+    {
+        $users = $job->getAppliedUsers;
+        $applyDetails = $job->getAppliedDetails;
+        return view('company_view', compact('applyDetails'));
     }
 }

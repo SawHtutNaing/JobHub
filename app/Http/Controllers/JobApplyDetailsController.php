@@ -39,4 +39,12 @@ class JobApplyDetailsController extends Controller
         ]);
         return redirect()->route('home');
     }
+
+    public function acceptInterview(JobApplyDetails $jobApplyDetails)
+    {
+        // dd($jobApplyDetails);
+        $jobApplyDetails->accept = true;
+        $jobApplyDetails->update();
+        return redirect()->back();
+    }
 }
