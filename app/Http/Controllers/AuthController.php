@@ -50,7 +50,7 @@ class AuthController extends Controller
             );
         }
 
-        event(new UserRegistered($user));
+        // event(new UserRegistered($user));
         return redirect(route('login'));
     }
 

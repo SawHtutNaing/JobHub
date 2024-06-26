@@ -45,13 +45,13 @@ $user = Auth::user();
           }}
           </p>
        </div>
-             
+     
         </div>
         <div class="relative">
           <div class="w-48 h-48 bg-indigo-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
     @if ($user->personalDetails?->profile_img)
-
-    <img   class=" mb-11" src="{{ asset('users_profile').'/'.$user->personalDetails?->profile_img}}" alt="">
+{{-- @dd(asset('').$user->personalDetails?->profile_img) --}}
+    <img   class=" mb-11" src="{{ asset('storage').'/'.$user->personalDetails?->profile_img}}" alt="">
         
     @else
           <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" viewBox="0 0 20 20" fill="currentColor">

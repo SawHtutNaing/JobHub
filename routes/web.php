@@ -18,25 +18,27 @@ use Illuminate\Http\Request;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
+
 */
+// email vefify off 
+// Route::get('/email/verify', function () {
+//     return view('auth.verify-email');
+// })->middleware('auth')->name('verification.notice');
 
-Route::get('/email/verify', function () {
-    return view('auth.verify-email');
-})->middleware('auth')->name('verification.notice');
 
+// Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+//     $request->fulfill();
 
-Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-    $request->fulfill();
+//     return redirect('/');
+// })->middleware(['auth', 'signed'])->name('verification.verify');
 
-    return redirect('/');
-})->middleware(['auth', 'signed'])->name('verification.verify');
+// Route::post('/email/verification-notification', function (Request $request) {
+//     $request->user()->sendEmailVerificationNotification();
 
-Route::post('/email/verification-notification', function (Request $request) {
-    $request->user()->sendEmailVerificationNotification();
+//     return back()->with('message', 'Verification link sent!');
+// })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
-    return back()->with('message', 'Verification link sent!');
-})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
-
+// email vefify off 
 
 
 
@@ -69,7 +71,7 @@ Route::get('/partner-companies', fn () => view('Companies'));
 
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 
-Route::group(['middleware' => ['auth', 'verified']], function () {
+Route::group(['middleware' => ['auth']], function () {
     //prifile
     Route::get('/profile', [ProfileTypeController::class, 'profile'])->name('profile');
     Route::get('profile-setting', [ProfileTypeController::class, 'profileSetting'])->name('profileSetting');

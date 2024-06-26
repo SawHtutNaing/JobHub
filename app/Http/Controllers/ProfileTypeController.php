@@ -97,7 +97,7 @@ class ProfileTypeController extends Controller
         $profile_imgName = time() . '.' . $profile_img->getClientOriginalExtension();
 
 
-        $request->profile_img->move(public_path('users_profile'), $profile_imgName);
+        $request->profile_img->move(public_path('storage/users_profile'), $profile_imgName);
         $personalDetails = $user->personalDetails;
         PersonalProfile::updateOrCreate(
             [
@@ -111,7 +111,7 @@ class ProfileTypeController extends Controller
                 'nationality' => $request->nationality,
                 'phones' => $request->phone,
                 'graduated' => $request->graduated,
-                'profile_img' => $profile_imgName
+                'profile_img' => 'users_profile/' . $profile_imgName
 
 
 

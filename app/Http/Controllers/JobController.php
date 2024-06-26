@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreJobRequest;
 use App\Http\Requests\UpdateJobRequest;
 use App\Models\Job;
+use App\Models\ShowJobStatic;
 use Illuminate\Support\Carbon;
 
 
@@ -146,7 +147,9 @@ class JobController extends Controller
         ];
 
         Job::insert($job);
-        return view('Home/index', ['jobs' => Job::JobList()]);
+        $showJobStatics = ShowJobStatic::all();
+
+        return view('Home/index', ['jobs' => Job::JobList(), 'showJobStatics' => $showJobStatics]);
     }
 
     /**
